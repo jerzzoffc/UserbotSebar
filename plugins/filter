@@ -1,0 +1,50 @@
+from clients import navy
+from command import (FILTERS, REP_BLOCK, filter_cmd, filters_cmd,
+                     getfilter_cmd, stopfilter_cmd)
+from helpers import CMD
+
+IS_PRO = True
+
+__MODULES__ = "Filters"
+__HELP__ = """<blockquote>Command Help **Filters**</blockquote>
+<blockquote expandable>--**Basic Commands**--
+
+    **You can active auto reply message from this command**
+        `{0}filter` (name) (reply message)
+    **View all saved filters message from your account** 
+        `{0}filters`
+    **You can get the filter format from this command**
+        `{0}getfilter` (name) raw
+    **You can stop filters message on chat if you want**
+        `{0}stop` (name)
+    **This command easy to delete all saved filters messages**
+        `{0}stop all`</blockquote>
+<b>   {1}</b>
+"""
+
+
+
+
+@CMD.UBOT("filter")
+async def _(client, message):
+    return await filter_cmd(client, message)
+
+
+@CMD.UBOT("getfilter")
+async def _(client, message):
+    return await getfilter_cmd(client, message)
+
+
+@CMD.UBOT("filters")
+async def _(client, message):
+    return await filters_cmd(client, message)
+
+
+@CMD.UBOT("stop")
+async def _(client, message):
+    return await stopfilter_cmd(client, message)
+
+
+@CMD.NO_CMD("FILTERS", navy)
+async def _(client, message):
+    return await FILTERS(client, message)
