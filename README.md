@@ -2,13 +2,7 @@
 git clone https://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@github.com/jerzzoffc/UserbotSebar && cd UserbotSebar
 ```
 ```
-cmd run UBOT
-```
-```
 apt update && apt upgrade -y
-```
-```
-cd UserbotSebar
 ```
 ```
 tmux new-session -s UserbotSebar
