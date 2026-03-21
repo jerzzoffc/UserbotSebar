@@ -3,7 +3,7 @@ import os
 
 from pyrogram.enums import ChatType
 from pyrogram.errors import (ChannelPrivate, ChatSendPlainForbidden,
-                             ChatWriteForbidden, FloodPremiumWait, FloodWait,
+                             ChatWriteForbidden, FloodWait,
                              Forbidden, NotAcceptable, PeerFlood,
                              PeerIdInvalid, SlowmodeWait, UserBannedInChannel)
 
@@ -106,7 +106,7 @@ async def bc_cmd(client, message):
                 error += f"Grup kontol kirim pesan suruh bayar {chat_id}\n"
                 continue
 
-            except (FloodWait, FloodPremiumWait) as e:
+           except FloodWait as e:
                 await asyncio.sleep(e.value)
                 try:
                     await (
@@ -239,7 +239,7 @@ async def gcast_cmd(client, message):
                 error += f"Grup kontol kirim pesan suruh bayar {chat_id}\n"
                 continue
 
-            except (FloodWait, FloodPremiumWait) as e:
+            except FloodWait as e:
                 await asyncio.sleep(e.value)
                 try:
                     await (
@@ -363,7 +363,7 @@ async def ucast_cmd(client, message):
                 error += f"PeerIdInvalid or lu bukan pengguna grup ini {chat_id}\n"
                 continue
 
-            except (FloodWait, FloodPremiumWait) as e:
+            except FloodWait as e:
                 await asyncio.sleep(e.value)
                 try:
                     await (
@@ -480,7 +480,7 @@ async def broadcast_db(
                     else client.send_message(chat_id, text)
                 )
                 done += 1
-            except (FloodWait, FloodPremiumWait) as e:
+            except FloodWait as e:
                 await asyncio.sleep(e.value)
                 await (
                     text.copy(chat_id)
@@ -878,7 +878,7 @@ async def spamg_cmd(client, message):
                         else await client.send_message(chat_id, send)
                     )
                 done += 1
-            except (FloodWait, FloodPremiumWait) as e:
+            except FloodWait as e:
                 wait = int(e.value)
                 if wait > 200:
                     failed += 1
