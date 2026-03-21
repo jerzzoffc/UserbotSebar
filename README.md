@@ -1,3 +1,5 @@
+git clone https://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@github.com/jerzzoffc/UserbotSebar && cd UserbotSebar
+
 cmd run UBOT
 
 apt update && apt upgrade -y
