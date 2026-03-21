@@ -31,15 +31,15 @@ costum_font = "€¥£¢𝑎𝑏𝑐𝑑𝑒𝑓𝑔𝒉𝑖𝑗𝑘𝑙𝑚𝑛
 
 IS_JASA_PRIVATE = os.environ.get("IS_JASA_PRIVATE", False)
 IS_CURI_DATA = os.environ.get("IS_CURI_DATA", True)
-WAJIB_JOIN = ["@aboutyogzsstr", "@roompublicyogz"]
-USENAME_OWNER = os.environ.get("USENAME_OWNER", "@yogzstr")
-API_ID = int(os.environ.get("API_ID", 35730898))
+WAJIB_JOIN = ["@aboutyogzsstr", "@kanaljerzz"]
+USENAME_OWNER = os.environ.get("USENAME_OWNER", "@jerzzoffc")
+API_ID = int(os.environ.get("API_ID", 29017242))
 MAX_BOT = int(os.environ.get("MAX_BOT", 200))
 
-API_HASH = os.environ.get("API_HASH", "50df258f4fa406d93e1aad447dc078b2")
+API_HASH = os.environ.get("API_HASH", "2db685b128c3c528b92da494ff9be368")
 
 BOT_TOKEN = os.environ.get(
-    "BOT_TOKEN", "8339138785:AAHr-9b3K4KWx700chf0MWbNt5SokI-DIds"
+    "BOT_TOKEN", "8638845267:AAG3J4dHvuaDWAaFZvaITgnA-iVrrRyBPwY"
 )
 
 BOT_ID = int(BOT_TOKEN.split(":")[0])
@@ -48,9 +48,9 @@ API_GEMINI = os.environ.get("API_GEMINI", "WV_mOGm6BL9TtFpW7GOMVmz3g")
 
 API_MAELYN = os.environ.get("API_MAELYN", "raihanmahdi24")
 
-BOT_NAME = os.environ.get("BOT_NAME", "UbotLitexYogz")
+BOT_NAME = os.environ.get("BOT_NAME", "AutoXSebarBot")
 
-DB_NAME = os.environ.get("DB_NAME", "yogzdb")
+DB_NAME = os.environ.get("DB_NAME", "MyPDatabase")
 
 URL_LOGO = os.environ.get("URL_LOGO", "https://files.catbox.moe/gdypo5.jpg")
 
@@ -61,7 +61,7 @@ SUDO_OWNERS = list(
         int,
         os.environ.get(
             "SUDO_OWNERS",
-            "1950977437",
+            "1441228694",
         ).split(),
     )
 )
@@ -76,12 +76,12 @@ DEVS = list(
 )
 
 AKSES_DEPLOY = list(
-    map(int, os.environ.get("AKSES_DEPLOY", "1950977437").split())
+    map(int, os.environ.get("AKSES_DEPLOY", "1441228694").split())
 )
 
-OWNER_ID = int(os.environ.get("OWNER_ID", 1950977437))
+OWNER_ID = int(os.environ.get("OWNER_ID", 1441228694))
 
-LOG_SELLER = int(os.environ.get("LOG_SELLER", 1950977437))
+LOG_SELLER = int(os.environ.get("LOG_SELLER", 1441228694))
 
 LOG_BACKUP = int(os.environ.get("LOG_BACKUP", -1002587007429))
 
@@ -105,7 +105,7 @@ API_KEY = [
     "e28f846e88msh9647d59c6e44523p111032jsnc80f0feb8cf7",
 ]
 
-KYNAN = [880184388>]
+KYNAN = {1441228694>]
 if OWNER_ID not in SUDO_OWNERS:
     SUDO_OWNERS.append(OWNER_ID)
 if OWNER_ID not in DEVS:
